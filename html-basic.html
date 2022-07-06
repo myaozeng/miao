@@ -84,8 +84,8 @@
     <h2>Google搜索</h2>
     <form target="_blank" action="https://www.google.com/">
         <input type="text" name="z">
-        <!-- <input hidden type="text" name="ie" value="UTF-8">
-        <input hidden type="text" name="sourceid" value="UTF"> -->
+        <input hidden type="text" name="ie" value="UTF-8">
+        <input hidden type="text" name="sourceid" value="UTF">
         <button type="submit">在新窗口打开搜索结果</button>
     </form>
 
@@ -142,17 +142,62 @@
 
     <hr>
 
+    <table border=1>
+        <col>
+        <col bgcolor=red>
+        <col>
+        <col bgcolor=red>
+        <thead>
+            <tr>
+                <th>编号</th>
+                <th>品名</th>
+                <th>进价</th>
+                <th>出价</th>
+            </tr>
+        </thead>
+        <tr>
+            <th>a</th>
+            <td>a</td>
+            <td>a</td>
+            <td>a</td>
+        </tr>
+        <tr>
+            <th>a</th>
+            <td>a</td>
+            <td rowspan=2>a</td>
+            <td>a</td>
+        </tr>
+        <tr>
+            <th>a</th>
+            <td>a</td>
+            <td>a</td>
+        </tr>
+        <tr>
+            <th>a</th>
+            <td rowspan=3>a</td>
+            <td>a</td>
+            <td>a</td>
+        </tr>
+    </table>
+
     <hr>
 
-    <img width=300 src="https://drscdn.500px.org/photo/174778125/m%3D1170_k%3D1/2841ccf2a3720e8e794a6a6930f6ff2c" alt="">
+    <img usemap="#map1" width=300 src="https://drscdn.500px.org/photo/174778125/m%3D1170_k%3D1/2841ccf2a3720e8e794a6a6930f6ff2c" alt="">
+
+    <map name="map1">
+    <area shape="circle" coords="160 296 132" href="https://www.jd.com/" target="_blank" alt="">
+  </map>
+
 
     <hr>
 
-    <a href="https://www.mi.com/index.html">小米</a>
+    <a href="https://www.mi.com/index.html ">小米</a>
+    <br>
+    <iframe name="lianjie" width="300" height="150" src="https://www.nodejs.org/en"></iframe>
 
     <div>aaa&nbsp;&nbsp;&nbsp;&nbsp;bbbbb</div>
     <pre>aaa      bbbbb</pre> >>>>>>>>>>>>>>>>>>>>>>&lt;
-    <<<<<<<<<<<<<<<<<<&lt;span&gt;&lt;/span&gt; <div id="dibu"></div>
+    <<<<<<<<<<<<<<<<<<&lt;span&gt;&lt;/span&gt; <div id="dibu "></div>
 </body>
 
 </html>
