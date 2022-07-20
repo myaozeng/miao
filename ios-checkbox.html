@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .toggle-round {
+            display: none;
+        }
+        
+        .ios-toggle-round {
+            display: inline-block;
+            width: 60px;
+            height: 33px;
+            border-radius: 20px;
+            position: relative;
+            background-color: #ffffff;
+            border: 1px solid #cac8c9;
+            overflow: hidden;
+        }
+        
+        .ios-toggle-round::before {
+            display: inline-block;
+            content: "";
+            width: 25px;
+            height: 25px;
+            border-radius: 20px;
+            position: absolute;
+            left: 3px;
+            top: 4px;
+            background-color: #ffffff;
+            transition: 0.5s cubic-bezier(1, 0, 0, 1);
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+        }
+        
+        input.toggle-round:checked+label.ios-toggle-round::before {
+            left: 32px;
+        }
+        
+        input.toggle-round:checked+label.ios-toggle-round {
+            background-color: #77ee64;
+            border: 1px #77ee64;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="checkbox" name="ios-toggle" id="toggle" class="toggle-round" />
+    <label for="toggle" class="ios-toggle-round"></label>
+</body>
+
+</html>
