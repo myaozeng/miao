@@ -11,8 +11,10 @@
     <meta http-equiv="refresh" content="1">
 
     <style>
+        html,
         body {
             margin: 0;
+            height: 100%;
         }
         
         * {
@@ -27,20 +29,17 @@
         .oald,
         .sidebar,
         .aside {
-            width: 400px;
+            width: 200px;
             background-color: pink;
             border: 1px solid;
         }
         
         h1 {
+            flex: none;
             text-align: right;
             margin: 0 0.5em;
             font-size: 24px;
             line-height: 3;
-        }
-        
-        aside div {
-            text-align: center;
         }
         
         input {
@@ -54,18 +53,29 @@
             vertical-align: text-top;
         }
         
-        aside ul {
-            list-style: none;
-            overflow-y: scroll;
-            height: calc(100vh - 122px);
+        .oald {
+            display: flex;
+            flex-direction: column;
         }
         
-        aside ul a {
+        ul {
+            list-style: none;
+            overflow-y: scroll;
+        }
+        
+        ul a {
             text-decoration: none;
+        }
+        
+        main {
+            flex: 1;
+            flex-flow: column;
+            display: flex;
         }
         
         .fantasy {
             height: 72px;
+            flex: none;
             font-size: 16px;
             padding-left: 1em;
             border: 1px solid;
@@ -73,11 +83,11 @@
         }
         
         .main {
+            flex-grow: 1;
             background-color: bisque;
             border: 1px solid;
-            height: calc(100vh - 72px);
-            overflow-y: scroll;
             padding: 1em;
+            overflow-y: scroll;
         }
         
         .sidebar,
