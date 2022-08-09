@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div,
+        p {
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: lightcoral;
+        }
+
+        p {
+            width: 50px;
+            height: 50px;
+            background-color: lightgreen;
+        }
+
+        .auto {
+            box-sizing: border-box;
+            padding-top: 75px;
+        }
+
+        .auto p {
+            margin: auto;
+        }
+
+        .table {
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+        }
+
+        .table p {
+            display: inline-block;
+        }
+
+        .flex {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .flex p {
+            display: inline-block;
+        }
+
+        .position {
+            position: relative;
+        }
+
+        .position p {
+            position: absolute;
+            top: 75px;
+            left: 75px;
+        }
+
+        .grid {
+            display: grid;
+        }
+
+        .grid p {
+            align-self: center;
+            justify-self: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>auto</h3>
+    <div class="auto">
+        <p></p>
+    </div>
+    <h3>table</h3>
+    <div class="table">
+        <p></p>
+    </div>
+    <h3>flex</h3>
+    <div class="flex">
+        <p></p>
+    </div>
+    <h3>position</h3>
+    <div class="position">
+        <p></p>
+    </div>
+    <h3>grid</h3>
+    <div class="grid">
+        <p></p>
+    </div>
+</body>
+
+</html>
