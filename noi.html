@@ -156,3 +156,1421 @@
   var n = 2 ** a
   console.log(n)
 </script>
+
+<script type="x" id="ch0104/01">
+  var n = Number(prompt())
+
+  if (n > 0) {
+    console.log('positive')
+  } else if (n == 0) {
+    console.log('zero')
+  } else {
+    console.log('negative')
+  }
+</script>
+
+<script type="x" id="ch0104/02">
+  var n = Number(prompt())
+
+  if (n < 0) {
+    console.log(-n)
+  } else {
+    console.log(n)
+  }
+</script>
+
+<script type="x" id="ch0104/03">
+  var n = Number(prompt())
+
+  if (n % 2 == 0) {
+    console.log('even')
+  } else {
+    console.log('odd')
+  }
+</script>
+
+<script type="x" id="ch0104/04">
+  var a = prompt()
+
+  if (a.charCodeAt(0) % 2 == 1) {
+    console.log('YES')
+  } else {
+    console.log('NO')
+  }
+</script>
+
+<script type="x" id="ch0104/05">
+  var x = Number(prompt())
+  var y = Number(prompt())
+
+  if (x > y) {
+    console.log('>')
+  } else if (x == y){
+    console.log('=')
+  } else {
+    console.log('<')
+  }
+</script>
+
+<script type="x" id="ch0104/06">
+  var n = Number(prompt())
+
+  if (n >= 10 && n <= 99) {
+    console.log('1')
+  } else {
+    console.log('0')
+  }
+</script>
+
+<script type="x" id="ch0104/07">
+  var a = Number(prompt())
+  var b = Number(prompt())
+
+  if (a <= 10 || b <= 20) {
+    console.log('1')
+  } else {
+    console.log('0')
+  }
+</script>
+
+<script type="x" id="ch0104/08">
+  var a = Number(prompt())
+
+  if (a % 3 == 0 && a % 5 == 0) {
+    console.log('YES')
+  } else {
+    console.log('NO')
+  }
+</script>
+
+<script type="x" id="ch0104/09">
+  var a = Number(prompt())
+
+  if (a % 3 == 0 && a % 5 == 0 && a % 7 == 0) {
+    console.log(3,5,7)
+  } else if (a % 3 == 0 && a % 5 == 0) {
+    console.log(3,5)
+  } else if (a % 3 == 0 && a % 7 == 0) {
+    console.log(3,7)
+  } else if (a % 5 == 0 && a % 7 == 0) {
+    console.log(5,7)
+  } else if (a % 3 == 0) {
+    console.log(3)
+  } else if (a % 5 == 0) {
+    console.log(5)
+  } else if (a % 7 == 0) {
+    console.log(7)
+  } else {
+    console.log('n')
+  }
+
+  // if (a % 3 == 0) {
+  //   console.log(3)
+  // }
+  // if (a % 5 == 0) {
+  //   console.log(5)
+  // }
+
+  // if (a % 7 == 0) {
+  //   console.log(7)
+  // }
+
+  // if (a % 3 == 0 || a % 5 == 0 || a % 7 == 0) {
+    
+  // } else {
+  //   console.log ('n')
+  // }
+</script>
+
+<script type="x" id="ch0104/10">
+  var a = Number(prompt())
+  var b = Number(prompt())
+
+  if (a >= 60 && b < 60 || b >= 60 && a < 60) {
+    console.log('1')
+  } else {
+    console.log('0')
+  }
+</script>
+
+<script type="x" id="ch0104/11">
+  var n = Number(prompt())
+
+  if (n == 1 || n == 3 || n == 5) {
+    console.log('NO')
+  } else {
+    console.log('YES')
+  }
+</script>
+
+<script type="x" id="ch0104/12">
+  var n = Number(prompt())
+
+  var b = 23 + 27 + n / 3.0
+  var w = n / 1.2 
+
+  if (b < w) {
+    console.log('Bike')
+  } else if(b == w) {
+    console.log('All')
+  } else {
+    console.log('Walk')
+  }
+</script>
+
+<script type="x" id="ch0104/13">
+  var n = Number(prompt())
+
+  if (n >= 0 && n < 5) {
+    console.log((-n + 2.5).toFixed(3))
+  } else if (n >= 5 && n < 10) {
+    console.log((2 - 1.5 * (n - 3) * (n - 3)).toFixed(3))
+  } else {
+    console.log((n / 2 - 1.5).toFixed(3))
+  }
+
+</script>
+
+<script type="x" id="ch0104/14">
+  var w = Number(prompt())
+  var e = prompt()
+  var p = 8
+
+  if (w > 1000) {
+    p = p + Math.ceil((w - 1000) / 500) * 4
+  }
+
+  if (e == 'y') {
+    p = p + 5
+  }
+
+  console.log(p)
+</script>
+
+<script type="x" id="ch0104/15">
+  var a = Number(prompt())
+  var b = Number(prompt())
+  var c = Number(prompt())
+
+  if (a > b && a > c) {
+    console.log(a)
+  } else if (b > a && b > c) {
+    console.log(b)
+  } else {
+    console.log(c)
+  }
+
+  // var max = 0
+  // if (a > max) {
+  //   max = a
+  // }
+  // if (b > max) {
+  //   max = b
+  // }
+  // if (c > max) {
+  //   max = c
+  // }
+  // console.log(max)
+</script>
+
+<script type="x" id="ch0104/16">
+  var a = Number(prompt())
+  var b = Number(prompt())
+  var c = Number(prompt()) 
+
+  if (a + b > c && a + c > b && b + c > a) {
+    console.log('yes')
+  } else {
+    console.log('no')
+  }
+</script>
+
+<script type="x" id="ch0104/17">
+  var n = Number(prompt()) 
+
+  if (n % 4 === 0 && n % 100 !== 0 || n % 400 === 0) {
+    console.log('Y')
+  } else {
+    console.log('N')
+  }
+</script>
+
+<script type="x" id="ch0104/18">
+  var x = Number(prompt())
+  var y = Number(prompt())
+
+  if (x >= -1 && y >= -1 && x <= 1 && y <= 1) {
+    console.log('yes')
+  } else {
+    console.log('no')
+  }
+</script>
+
+<script type="x" id="ch0104/19">
+  var a = Number(prompt())
+  var b = Number(prompt())
+  var op = prompt()
+
+  if (op == '+') {
+    console.log(a + b)
+  } else if (op == '-') {
+    console.log(a - b)
+  } else if (op == '*') {
+    console.log(a * b)
+  } else if (op == '/') {
+    if (b == 0) {
+      console.log('Divided by zero!')
+    } else {
+      console.log(a / b)
+    }
+  } else {
+    console.log('Invalid operator!')
+  }
+
+  // var a = Number(prompt())
+  // var b = Number(prompt())
+  // var c = prompt()
+
+  // if (c == '+') {
+  //   console.log(a + b)
+  // } else if (c == '-') {
+  //   console.log(a - b)
+  // } else if (c == '*') {
+  //   console.log(a * b)
+  // } else if (c == '/') {
+  //   console.log(a / b)
+  // } else if (c == '/' && b == 0) {
+  //   console.log('Divided by zero!')
+  // } else {
+  //   console.log('Invalid operator!')
+  // }
+</script>
+
+<script type="x" id="ch0104/20">
+  var a = Number(prompt())
+  var b = Number(prompt())
+  var c = Number(prompt())
+
+  var delta = b * b - 4 * a * c
+  var delta = b * b - 4 * a * c
+
+  if (delta >= 0) {
+    var x1 = (-b + Math.sqrt(delta)) / (2 * a)
+    var x2 = (-b - Math.sqrt(delta)) / (2 * a)
+
+    if (delta > 0) {
+      var result = 'x1=' + x1.toFixed(5) + ';x2=' + x2.toFixed(5)
+    } else {
+      var result = 'x1=x2=' + x1.toFixed(5)
+    }
+  } else {
+    delta = -delta
+    var sDelta = Math.sqrt(delta)
+
+    var x1real = -b / (2 * a) // x1的实部
+    var x1imag = sDelta / (2 * a)// x1的虚部
+    var x2real = -b / (2 * a) // x1的实部
+    var x2imag = -sDelta / (2 * a)// x1的虚部
+
+    var x1 = x1real.toFixed(5) + (x1imag > 0 ? '+' : '') + x1imag.toFixed(5) + 'i'
+    var x2 = x2real.toFixed(5) + (x2imag > 0 ? '+' : '') + x2imag.toFixed(5) + 'i'
+
+    var result = 'x1=' + x1 + ';x2=' + x2
+  }
+  console.log(result)
+</script>
+
+<script type="x" id="ch0104/21">
+  var n = Number(prompt())
+  var x = Number(prompt())
+  var y = Number(prompt())
+
+  if (y % x == 0) {
+    console.log(n - parseInt(y / x))
+  } else {
+    console.log(n- parseInt(y / x) - 1)
+  }
+</script>
+
+<script type="x" id="ch0105/01">
+
+  var n = Number(prompt('请输入总人数:')) // 输入人的数量
+  var totalAge = 0 // 记录所有人的年龄之和
+  var count = 1 // 记录循环次数
+
+  while (count <= n) {
+    var age = Number(prompt('请输入第' + count + '人的年龄:'))
+    totalAge = totalAge + age
+    count = count + 1
+  }
+
+  var average = totalAge / n
+
+  console.log(average.toFixed(2))
+
+</script>
+
+<script type="x" id="ch0105/02">
+
+  var totalMoney = 0 // 记录所有月份的结余之和
+  var count = 1 // 循环次数
+
+  while (count <= 12) {
+    var money = Number(prompt('请输入第' + count + '月的结余:'))
+    totalMoney = totalMoney + money
+    count = count + 1
+  }
+
+  var average = totalMoney / 12
+
+  console.log('$' + average.toFixed(2))
+
+</script>
+
+<script type="x" id="ch0105/03">
+
+  var n = Number(prompt('请输入样本容量:'))
+  var totalData = 0
+  var count = 1
+
+  while (count <= n) {
+    var data = Number(prompt('请输入第'+ count + '个样本数据:'))
+    totalData = totalData + data
+    count = count + 1
+  }
+
+  var average = totalData / n
+
+  console.log(average.toFixed(4))
+  
+</script>
+
+<script type="x" id="ch0105/04">
+
+  var n = Number(prompt('请输入一个整数:'))
+  var totalSum = 0
+  var count = 1
+
+  while (count <= n) {
+    var sum = Number(prompt('请输入第' + count + '个整数:'))
+    totalSum = totalSum + sum
+    count = count + 1
+  }
+
+  var average = totalSum / n
+
+  console.log(totalSum + ' ' + average.toFixed(5))
+
+</script>
+
+<script type="x" id="ch0105/05">
+
+  var n = Number(prompt('请输入考试的总人数:'))
+  var max = 0
+  var count = 0
+
+  while (count < n) {
+    var score = Number(prompt('请输入第' + count + '个学生的分数:'))
+
+    if (score > max) {
+      max = score
+    }
+
+    count = count + 1
+  }
+
+  console.log(max)
+
+</script>
+
+<script type="x" id="ch0105/06">
+
+  var n = Number(prompt('请输入一个整数:'))
+  var max = -Infinity
+  var min = Infinity
+  var count = 1
+
+  while (count <= n) {
+    var x = Number(prompt('请输入第' + count + '个整数:'))
+
+    if (x > max) {
+      max = x
+    } 
+    if (x < min) {
+      min = x
+    }
+
+    count = count + 1
+  }
+  console.log(max - min)
+
+</script>
+
+<script type="x" id="ch0105/07">
+
+  var n = Number(prompt('请输入天数:'))
+  var totalGold = 0
+  var totalSilver = 0
+  var totalCopper = 0
+  var count = 1
+
+  while (count <= n) {
+    var gold = Number(prompt('请输入第' + count + '天的金牌数:'))
+    var silver = Number(prompt('请输入第' + count + '天的银牌数:'))
+    var copper = Number(prompt('请输入第' + count + '天的铜牌数:'))
+    totalGold = totalGold + gold
+    totalSilver = totalSilver + silver
+    totalCopper = totalCopper + copper
+    count = count + 1
+  }
+
+  var sum = totalGold + totalSilver + totalCopper
+
+  console.log(totalGold + ' ' + totalSilver + ' ' + totalCopper + ' ' + sum)
+
+</script>
+
+<script type="x" id="ch0105/08">
+
+  var n = Number(prompt('请输入一个整数:'))
+  var totalCorner = 0
+  var sum = (n - 2) * 180
+  var count = 1
+
+  while (count < n) {
+    var corner = Number(prompt('请输入第' + count + '个内角的度数:'))
+    totalCorner = totalCorner + corner
+    count = count + 1
+  }
+
+  var x = sum - totalCorner
+
+  console.log(x)
+
+</script>
+
+<script type="x" id="ch0105/09">
+
+  var m = Number(prompt('请输入第一个整数:'))
+  var n = Number(prompt('请输入第二个整数:'))
+  var sum = 0
+  var i = m
+
+  while (i <= n) {
+    if (i % 2 == 1) {
+      sum = sum + i
+    }
+
+    i = i + 1
+  }
+
+  console.log(sum)
+
+</script>
+
+<script type="x" id="ch0105/10">
+
+  var m = Number(prompt('请输入第一个整数:'))
+  var n = Number(prompt('请输入第二个整数:'))
+  var sum = 0
+  var i = m
+
+  while (i <= n) {
+    if (i % 17 == 0) {
+      sum = sum + i
+    }
+
+    i = i + 1
+  }
+
+  console.log(sum)
+
+</script>
+
+<script type="x" id="ch0105/11">
+
+  var k = Number(prompt('请输入一个整数:'))
+  var one = 0 // 记录1出现的次数
+  var five = 0 // 记录5出现的次数
+  var ten = 0 // 记录5出现的次数
+  var count = 1
+
+  while (count <= k) {
+    var i = Number(prompt('请输入第' + count + '个整数:'))
+    
+    if (i == 1) {
+      one = one + 1
+    }
+    if (i == 5) {
+      five = five + 1
+    }
+    if (i == 10) {
+      ten = ten + 1
+    }
+
+    count = count + 1
+  }
+
+  console.log(one,five,ten)
+
+</script>
+
+<script type="x" id="ch0105/12">
+
+  var n = Number(prompt('请输入第一个整数:'))
+  var m = Number(prompt('请输入第二个整数:'))
+  var i = 0 // 记录n个数中与m相同的数的个数
+  var count = 1
+
+  while (count <= n) {
+    var x = Number(prompt('请输入第' + count + '个整数:'))
+
+    if (m == x) {
+      i = i + 1
+    }
+    
+    count = count + 1
+  }
+
+  console.log(i)
+
+</script>
+
+<script type="x" id="ch0105/13">
+
+  var a = Number(prompt('请输入第一个整数:'))
+  var n = Number(prompt('请输入第二个整数:'))
+  var sum = 0
+
+  for (i = 1; i <= n; i++) {
+    sum = Math.pow(a,n)
+  }
+
+  console.log(sum)
+
+</script>
+
+<script type="x" id="ch0105/14">
+
+  var x = Number(prompt('请输入人口基数:'))
+  var n = Number(prompt('请输入年数:'))
+  var sum = x
+
+  for (i = 1; i <= n; i++) {
+    sum = sum + sum * 0.001
+  }
+
+  console.log(sum.toFixed(4))
+
+</script>
+
+<script type="x" id="ch0105/15">
+
+  var r = Number(prompt('请输入复合年利率:'))
+  var m = Number(prompt('请输入现有总值:'))
+  var y = Number(prompt('请输入投资年限:'))
+  var sum = m
+
+  for (i = 1; i <= y; i++) {
+    sum = sum + sum * 0.05
+  }
+
+  console.log(parseInt(sum))
+
+</script>
+
+<script type="x" id="ch0105/16">
+
+  var n = Number(prompt('请输入年薪:'))
+  var k = Number(prompt('请输入每年增长比:'))
+
+  var p = 1 + k / 100 // 下一年房价是本年的p倍(1.1倍)
+  var totalN = 0 // 累计的存款
+  var house = 200
+  var buyed = false
+  
+  // 循环体代表第i年的年底
+  for (i = 1; i <= 20; i++) {
+    totalN += n // 计算年底攒下的钱
+    if (totalN >= house) {
+      buyed = true
+      console.log(i)
+      break
+    }
+    house *= p // 计算到第i年年底时房子的价格
+  }
+  if (!buyed) {
+    console.log('Impossible')
+  }
+  
+
+</script>
+
+<script type="x" id="ch0105/17">
+
+  // var n = Number(prompt('请输入一个整数:'))
+
+  // var result = (1 / Math.sqrt(5)) * (((1 + Math.sqrt(5)) / 2) ** n - ((1 - Math.sqrt(5)) / 2) ** n )
+
+  // console.log(result)
+
+  var n = Number(prompt('请输入一个整数:'))
+
+  var a = 0
+  var b = 1
+  var c
+
+  for (i = 0; i < n; i++) {
+    c = a + b
+    a = b
+    b = c
+  }
+
+  console.log(a)
+
+</script>
+
+<script type="x" id="ch0105/18">
+
+  var n = Number(prompt('请输入一个整数:'))
+  var x1 = Number(prompt('请输入鸡尾酒疗法的第一个值:')) // 鸡尾酒疗法
+  var x2 = Number(prompt('请输入鸡尾酒疗法的第二个值:')) // 鸡尾酒疗法
+
+  for (i = 1; i < n; i++) {
+    var y1 = Number(prompt()) // 新疗法
+    var y2 = Number(prompt()) // 新疗法
+    if (y2 / y1 - x2 / x1 > 0.05) {
+    console.log('better')
+    } else if (x2 / x1 - y2 / y1 > 0.05) {
+    console.log('worse')
+    } else {
+    console.log('same')
+    }
+  }
+
+</script>
+
+<script type="x" id="ch0105/19">
+
+  var n = Number(prompt('请输入一个整数:'))
+  var m = 0 // 距离
+  var p = 0 // 开船耗时
+  var r = 0 // 所有人上下船耗时
+  var s = 50 // 船的速度
+  var a = 1 // 上船时间
+  var b = 0.5 // 下船时间
+ 
+
+  for (i = 0; i < n; i++) {
+    var x = Number(prompt())
+    var y = Number(prompt())
+    var z = Number(prompt())
+    m = Math.sqrt(x * x + y * y)
+    p = m / s * 2
+    r = z * (a + b)
+  }
+    var time = r + p
+    console.log(Math.ceil(time))
+
+  // var n = Number(prompt())
+  // var totalTime = 0
+
+  // for (var i = 0; i < n; i++) {
+  //   var x = Number(prompt())
+  //   var y = Number(prompt())
+  //   var count = Number(prompt())
+
+  //   var distance = Math.sqrt(x * x + y * y)
+
+  //   var time = distance / 50 * 2 + count * 1.5
+
+  //   totalTime += time
+  // }
+
+  // console.log(Math.ceil(totalTime))
+
+</script>
+
+<script type="x" id="ch0105/20">
+
+  var h = Number(prompt())
+  var H = h // 记录初始高度,以备后面从总值减去
+
+  var total = 0
+
+  for (var i = 0; i < 10; i++) {
+    total += h * 2
+    h = h / 2
+  }
+
+  total = total - H
+
+  console.log(total.toFixed(4), h.toFixed(7))
+
+</script>
+
+<script type="x" id="ch0105/21">
+
+  var number = Number(prompt())
+
+  while (number !== 1) {
+    if (number % 2 == 1) {
+      var next = number * 3 + 1
+      var str = number + '*3+1=' + next
+    } else if (number % 2 == 0) {
+      var next = number / 2
+      var str = number + '/2=' + next
+  }
+    console.log(str)
+    number = next
+  }
+
+  console.log('End')
+
+  // var n = Number(prompt('请输入一个整数:'))
+  // var str = ''
+
+  // for (i = 0; i <= n + 1; i++) {
+  //   if (n == 1) {
+  //     console.log('End')
+  //   }
+  //   if (n % 2 == 1) {
+  //     str = n + '*' + 3 + '+' + 1 + '=' + (n * 3 + 1)
+  //     // str = n + '*3+1' + (n = n * 3 + 1)
+  //     // 下面的n = n * 3 + 1就可以直接省略了,下面同理。
+  //     console.log(str)
+  //     n = n * 3 + 1
+  //   }
+  //   if (n % 2 == 0) {
+  //     str = n + '/' + 2 + '=' + (n / 2)
+  //     console.log(str)
+  //     n = n / 2
+  //   }
+  // }
+  // console.log('End')
+
+</script>
+
+<script type="x" id="ch0105/22">
+
+  var me = 0 // 手上的钱
+  var mom = 0 // 存下的钱
+  var b = false // 不够花
+
+  for (var i = 1; i <= 12; i++) {
+    me += 300
+    var budget = Number(prompt()) // 预算
+
+    if (me < budget) {
+      console.log(-i)
+      b = true
+      break
+    } else {
+      me -= budget
+      var a = me - me % 100 // 能存下的钱
+      me -= a
+      mom += a
+    }
+  }
+
+  if (!b) {
+    console.log(me + mom * 1.2)
+  }
+
+</script>
+
+<script type="x" id="ch0105/23">
+
+  var sum = Number(prompt('请输入药品总量:'))
+  var num = Number(prompt('请输入取药人数:'))
+  var n = sum // 每次剩余的药品量
+  var x = 0
+
+  for (i = 0; i < num; i++) {
+    var count = Number(prompt()) // 取药数量
+    if (n < count) {
+      x += 1
+    } else {
+      n = n - count
+    }
+  }
+
+  console.log(x)
+
+</script>
+
+<script type="x" id="ch0105/24">
+
+  var n = Number(prompt('请输入一个整数:'))
+  var t = 0
+
+  for (i = 1; i <= n; i++) {
+    var a = Number(prompt('请输入第' + i + '组收缩压:'))
+    var b = Number(prompt('请输入第' + i + '组舒张压:'))
+    if (a >= 90 && a <= 140 && b >= 60 && b <= 90) {
+      t += 1
+    } else {
+      t = 0
+    }
+  }
+
+  console.log(t)
+
+</script>
+
+<script type="x" id="ch0105/25">
+
+  // 81到342之间的数转换成7进制与9进制才都是3位数
+  for (var x = 81; x <= 342; x++) {
+    var a7 = x % 7 // 7进制个位数
+    var b7 = (x - a7) / 7 % 7 // 7进制右数第二位数
+    var c7 = (x - a7 - b7 * 7) / 7 / 7 % 7 // 7进制右数第三位数
+
+    var a9 = x % 9 // 9进制个位数
+    var b9 = (x - a9) / 9 % 9 // 9进制右数第二位数
+    var c9 = (x - a9 - b9 * 9) / 9 / 9 % 9 // 9进制右数第三位数
+
+    if (a7 == c9 && a9 == c7 && b7 == b9) {
+      console.log(x)
+      console.log('' + c7 + b7 + a7)
+      console.log('' + c9 + b9 + a9)
+      break
+    }
+  }
+
+</script>
+
+<script type="x" id="ch0105/26">
+
+  var n = Number(prompt('请输入一个整数:'))
+  var z = 0 // 满足条件的个数
+
+  for (i = 1; i <= n; i++) {
+    var x = Number(prompt('请输入第' + i + '个整数:'))
+    var a = (x - x % 1000) / 1000 % 10 // 千位数
+    var b = (x - x % 100) / 100 % 10 // 百位数
+    var c = (x - x % 10) / 10 % 10 // 十位数
+    var d = x % 10 // 个位数
+    var sum = d - a - b - c
+    if (sum > 0) {
+      z += 1
+    }
+  }
+
+  console.log(z)
+
+</script>
+
+<script type="x" id="ch0105/27">
+
+  var k = Number(prompt('请输入一个整数:'))
+  var n = 0
+  var sn = 0
+
+
+  while (sn <= k) {
+    n += 1
+    sn += 1 / n
+  }
+
+  console.log(n)
+
+</script>
+
+<script type="x" id="ch0105/28">
+
+  var n = Number(prompt('请输入一个整数:'))
+
+  do {
+    var d = n % 10 
+    console.log(d)
+    n = n - d
+    n = n / 10
+  } while (n > 0)
+
+</script>
+
+<script type="x" id="ch0105/29">
+
+  var n = Number(prompt('请输入一个整数:'))
+  var sign = 1
+
+  if (n < 0) { // 如果n小于0,把n转成正数,并记录符号
+    n = -n
+    sign = -1
+  }
+
+  var str = ''
+
+  do {
+    var d = n % 10 
+    str = str + d
+    n = n - d
+    n = n / 10
+  } while (n > 0)
+
+  str = parseInt(str)
+
+  if (sign == 1) {
+    console.log(str)
+  } else {
+    console.log(-str)
+  }
+
+</script>
+
+<script type="x" id="ch0105/30">
+
+  var m = Number(prompt())
+  var k = Number(prompt())
+  var count = 0 // 记录各个位上3的个数
+
+  while (m > 0) {
+    var d = m % 10
+    if (d == 3) { // 如果当前位上的数是3,则记数加一
+      count++
+    }
+    m = (m - d) / 10
+  }
+
+  if (count === k) {
+    console.log('YES')
+  } else {
+    console.log('NO')
+  }
+
+</script>
+
+<script type="x" id="ch0105/31">
+
+  var n = Number(prompt()) // 灯的数量
+  var m = Number(prompt()) // 人的数量
+  var result = ''
+  var first = false // 是否遇到了第一个关着的灯
+
+  // 遍历每一个灯
+  for (var i = 1; i <= n; i++) {
+
+    var open = true // 这个灯一开始是打开状态
+
+    // 遍历每个小于灯的编号的人,因为灯的编号要是人的编号的倍数才有可能进if
+    for (var j = 1; j <= m && j <= i; j++) {
+      // 如果灯的编号是人的编号的倍数
+      if (i % j == 0) {
+        open = !open // 则切换灯的状态
+      }
+    }
+
+    if (!open) { // 如果这个灯是关的着
+
+      if (!first) {
+        first = true
+        result += (i)
+      } else {
+        result += (',' + i)
+      }
+    }
+  }
+
+  console.log(result)
+
+</script>
+
+<script type="x" id="ch0105/32">
+
+  var n = Number(prompt('请输入一个整数:'))
+  var q = 2 // 下一个分数的分子
+  var p = 1 // 下一个分数的分母
+  var t = 0 // 下一个分数的分子
+  var sum = 0 // 分数求和
+
+  for (i = 0; i < n; i++) {
+    sum += 1 * q / p
+    t = q + p
+    p = q
+    q = t
+  }
+
+  console.log(sum.toFixed(4))
+
+</script>
+
+<script type="x" id="ch0105/33">
+
+  var n = Number(prompt('请输入一个整数:'))
+  var sum = 0
+
+  for (i = 1; i <= n; i++) {
+    if (i % 2 == 0) {
+      sum += -1 / i
+    } else {
+      sum += 1 / i
+    }
+  }
+
+  console.log(sum.toFixed(4))
+
+</script>
+
+<script type="x" id="ch0105/34">
+
+  var n = Number(prompt('请输入一个整数:'))
+  var num = 1
+  var sum = 1
+
+  for (i = 2; i <= n; i++) {
+    num *= i
+    sum += num
+  }
+
+  console.log(sum)
+
+</script>
+
+<script type="x" id="ch0105/35">
+
+  var n = Number(prompt('请输入一个整数:'))
+  var num = 1
+  var e = 2
+
+  for (i = 2; i <= n; i++) {
+    num *= i
+    e += 1 / num
+  }
+
+  console.log(e.toFixed(10))
+
+</script>
+
+<script type="x" id="ch0105/36">
+
+  var x = Number(prompt('请输入一个整数:'))
+  var n = Number(prompt('请输入一个整数:'))
+  var num = 1
+  var sum = 1
+
+  for (i = 1; i <= n; i++) {
+    num *= x
+    sum += num
+  }
+
+  console.log(sum.toFixed(2))
+
+</script>
+
+<script type="x" id="ch0105/38">
+
+  var n = Number(prompt())
+
+  for (var i = 1; i <= n; i++) {
+    var m = Number(prompt()) // 最高次幂
+    var M = m // 保存最高次幂
+
+    if (m == 0) { // 最高次幂为0时是特殊情况,因为也要输出1个数
+      var c = Number(prompt())
+      console.log(0)
+    } else {// 其它情况最高次幂是n,输出n-1个数
+      for (var j = 0; j <= M; j++) {
+        var c = Number(prompt())
+        if (j !== M) {
+          console.log(c * m)
+        }
+        m--
+      }
+    }
+  }
+
+</script>
+
+<script type="x" id="ch0105/39">
+
+  var n = Number(prompt())
+  var sum = 0
+
+  for (var i = 1; i < n; i++) {
+    if (i % 7 !== 0) { // 满足该条件才有可能是与7无关的数
+      // 先假设每位上都不是7
+      var 各个位上有无出现过7 = false
+
+      // 循环计算出各个位上的数,看是否是7
+      var j = i // 不改变i,因为i用在外层循环上
+      while (j > 0) {
+        var d = j % 10
+        if (d == 7) {
+          各个位上有无出现过7 = true
+          break // 看到一个就可以结束了
+        }
+        j = (j - d) / 10
+      }
+
+      // 各个位上都没有出现过7,则真的与7无关
+      if (!各个位上有无出现过7) {
+        sum += i * i
+      }
+    }
+  }
+
+  console.log(sum)
+
+</script>
+
+<script type="x" id="ch0105/40">
+
+  var n = Number(prompt())
+  var count = 0
+
+  // 对于1到n的每个数
+  for (var i = 1; i <= n; i++) {
+    var x = i
+
+    // 将x拆解为其每位上的数
+    while(x > 0) {
+      var d = x % 10
+      if (d == 1) { // 如果是1,则计数加1
+        count++
+      }
+      x = (x - d) / 10
+    }
+  }
+
+  console.log(count)
+
+</script>
+
+<script type="x" id="ch0105/41">
+
+  var start = Number(prompt())
+  var end = Number(prompt())
+  var count = 0
+
+  // 对于1到n的每个数
+  for (var i = start; i <= end; i++) {
+    var x = i
+
+    // 将x拆解为其每位上的数
+    while(x > 0) {
+      var d = x % 10
+      if (d == 2) { // 如果是1,则计数加1
+        count++
+      }
+      x = (x - d) / 10
+    }
+  }
+
+  console.log(count)
+
+</script>
+
+<script type="x" id="ch0105/42">
+
+  var h = Number(prompt())
+  var w = Number(prompt())
+  var char = prompt()
+  var fill = Number(prompt())
+
+  var result = ''
+
+  // 遍历处理每一行
+  for (i = 1; i <= h; i++) {
+    // 如果处于边缘,则拼指定的符号
+    for(j = 1; j <= w; j++) {
+      if ((i == 1) || (i == h) || (j == 1) || (j == w)) {
+        result += char
+      } else if (fill){ // 否则看是否填充
+        result += char // 如果填充,就拼指定的符号
+      } else {
+        result += ' '
+      }
+    }
+    // 不是最后一行时,才在行尾加上一个回车
+    if (i !== h) {
+      result += '\n'
+    }
+  }
+
+  console.log(result)
+
+</script>
+
+<script type="x" id="ch0105/43">
+
+  var n = Number(prompt('请输入一个整数:'))
+  var x = 0
+  var max = 0
+
+  for (i = 2; i < Math.sqrt(n); i++) {
+    if(n % i == 0) {
+      x = n / i
+      break
+    }
+  }
+  if (i > x){
+    max = i
+  } else{
+    max = x
+  }
+
+  console.log(max)
+
+</script>
+
+<script type="x" id="ch0105/44">
+
+  var n = Number(prompt('请输入一个整数:'))
+
+  for (i = 2; ; i++) { // 死循环从2开始试数
+    var a = 1 // 判断是否为素数, 1是 0不是
+    for (j = 2; j * j <= i; j++) { // 从2开始因子j的平分一直小于数i且i不能被j整除,则说明i是素数
+      if (i % j == 0) { //当前i能被j整除时,便不是素数,修改判断值a=0 提前结束内层循环
+        a = 0
+        break
+      }
+    }
+    if (a == 1) { // a=1则是素数
+      n--
+    }
+    if (n == 0) { // 当n等于0时,当前i便是第n个素数,结束死循环
+      break
+    }
+  }
+
+  console.log(i)
+
+</script>
+
+<script type="x" id="ch0105/45">
+
+  var n = Number(prompt('请输入一个整数:'))
+  var a = 0
+  var b = 0
+
+  for (i = 1; ; i++) {
+    for (j = 1; j <= i; j++) {
+      a++
+      b += i
+    }
+    if (a == n) {
+      break
+    }
+  }
+
+  console.log(b)
+
+</script>
+
+<script type="x" id="narcissistic">
+// 输入一个数,判断是否是水仙花数
+
+  var n = Number(prompt())
+
+  for (i = 0; i <= n; i++) {
+    var a = n % 10
+    var b = (n - n % 10) / 10 % 10
+    var c = (n - n % 100) / 100 % 10
+  }
+  if (a ** 3 + b ** 3 + c ** 3 == n ) {
+      console.log('YES')
+    } else {
+      console.log('NO')
+    }
+
+</script>
+
+<script type="x" id="narcissistics">
+// 输出10000以内的水仙花数
+// 水仙花数是指一个3位数,它的每个位上的数字的3次幂之和等于它本身(例如:1^3 + 5^3+ 3^3 = 153)
+
+  for (i = 100; i < 1000; i++) {
+    var a = i % 10
+    var b = (i - i % 10) / 10 % 10
+    var c = (i - i % 100) / 100 % 10
+    if (a ** 3 + b ** 3 + c ** 3 == i ) {
+      console.log(i)
+    }
+  }
+
+</script>
+
+<script type="x" id="palindrom">
+// 输入一个数,判断它是否是回文数,如1223221
+
+</script>
+
+<script type="x" id="weekday">
+// 输入年份与月份,输出这个月的第一天是周几(视具体设定,周一可以用1或0表示)
+
+</script>
+
+<script type="x" id="complete-number">
+// 输入一个数,判断它是否是完全数(自行查相关概念)
+
+  var n = Number(prompt())
+  var sum = 0
+
+  for (i = 1; i < n; i++) {
+    if (n % i == 0) {
+      sum += i
+    }
+  }
+  if (sum == n) {
+    console.log('YES')
+  } else {
+    console.log('NO')
+  }
+
+</script>
+
+<script type="x" id="complete-numbers">
+// 输出1000以内的完全数
+
+  for(i = 1; i < 1000; i++) {
+    var sum = 0
+    for (j = 1; j < i; j++) {
+      if(i % j == 0) {
+        sum += j
+      }
+    }
+    if (sum == i) {
+        console.log(i)
+      }
+  }
+  
+
+</script>
+
+<script type="x" id="prime">
+  // 输入一个数,判断它是否是素数
+
+  var n = Number(prompt())
+
+  for (i = 2; i < n; i++) { 
+    if (n % i == 0) { 
+    break 
+    } 
+  }
+  if (i < n) { 
+    console.log('NO') 
+  } else { 
+    console.log('YES') 
+  }
+
+</script>
+
+
+<script type="" id="primes">
+// 输出100以内的素数
+
+
+</script>
+
+<script type="x" id="itob">
+// 给定一个整数,将其转换为字符串:不能使用String等现成函数,但可以使用非此功能的其它函数,也不能利用任意运算符的自动类型转换
+</script>
+
+<script type="x" id="lcf&lcm">
+// 输入两个数,输出它们的最大公约数和最小公倍数
+</script>
+
+<script type="x" id="sqrt">
+// 输入一个数,求它的平方根,精确到小数点后3位,不能使用Math.sqrt
+</script>
