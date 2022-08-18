@@ -176,7 +176,6 @@
     dot(x, y + 10, color)
   }
 
-
   //     * 画出rgb色彩空间的某一面（尺寸要大于100x100）
   //        'rgb(255,255,0)'
   //        '#ff00ff'
@@ -213,6 +212,88 @@
   //          ------
   //          0.5    0.87
   //          -0.87  0.5
+
+  // 函数画直线
+  function drawLine(ax, ay, bx, by, color) {
+    var dx = bx - ax // 起点终点的x坐标距离
+    var dy = by - ay // 起点终点的y坐标距离
+    var absDx = Math.abs(dx)
+    var absDy = Math.abs(dy)
+    // 此代码只能绘制bx和by都分别大于ax和ay的直线
+    // 整个过程只涉及整数运算，速度比涉及浮点运算或乘法运算要快
+
+    // 更贴近x轴，让x每步++
+    if (absDx > absDy) {
+      var xstep = dx > 0 ? 1 : -1 // x方向上的走势,如果x方向上的跨度为负,则x的走动是--,否则是++
+      var ystep = dy > 0 ? 1 : -1 // y方向的走势,如果y方向上的跨度为负,则y动的时候是--,否则是++
+      var y = ay
+      var yp = 0
+      for (var x = ax; x != bx; x += xstep) {
+        dot(x, y, color)
+        yp += absDy // 让y增加一个垂直跨度
+        if (yp > absDx) {
+          y += ystep
+          yp -= absDx
+        }
+      }
+    } else { // 更贴近y轴，让y每步++
+      var ystep = dy > 0 ? 1 : -1
+      var xstep = dx > 0 ? 1 : -1 // x方向的走势,如果x方向上的跨度为负,则x动的时候是--,否则是++
+      var x = ax
+      var xp = 0
+      for (var y = ay; y != by; y += ystep) {
+        dot(x, y, color)
+        xp += absDx // 让xp增加一个水平跨度
+        if (xp > absDy) {
+          x += xstep
+          xp -= absDy
+        }
+      }
+    }
+  }
+  console.log(drawLine(50, 20, 100, 100, 'black'))
+
+  // 函数画圆
+  debugger
+
+  function drawCircle(cx, cy, r, color, fill) {
+    var x = 0
+    var y = r
+
+    while (x <= y) {
+      dot(x + cx, y + cy, color)
+      dot(x + cx, -y + cy, color)
+      if (fill) {
+        drawLine(x + cx, -y + cy, x + cx, y + cy, color)
+      }
+      dot(-x + cx, y + cy, color)
+      dot(-x + cx, -y + cy, color)
+      if (fill) {
+        drawLine(-x + cx, -y + cy, -x + cx, y + cy, color)
+      }
+      dot(y + cx, x + cy, color)
+      dot(-y + cx, x + cy, color)
+      if (fill) {
+        drawLine(-y + cx, x + cy, y + cx, x + cy, color)
+      }
+      dot(y + cx, -x + cy, color)
+      dot(-y + cx, -x + cy, color)
+      if (fill) {
+        drawLine(-y + cx, -x + cy, y + cx, -x + cy, color)
+      }
+
+      x++
+
+      var d1 = x * x + y * y
+      var d2 = x * x + (y - 1) * (y - 1)
+
+      if (Math.abs(d1 - r * r) > Math.abs(d2 - r * r)) {
+        y--
+      }
+    }
+  }
+  console.log(drawCircle(320, 80, 60, 'red', 1))
+
 </script>
 
 </html>
