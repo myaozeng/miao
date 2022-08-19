@@ -1758,6 +1758,10 @@
     return days % 7
   }
 
+  var year = Number(prompt())
+  var month = Number(prompt())
+  console.log(weekday(year, month))
+
 </script>
 
 <script type="x" id="complete-number">
@@ -1976,13 +1980,27 @@
   }
   function itob(n) {
     var str = ''
-    do {
+    if (n > 0){
+      do {
+        var ge = n % 10
+        str = numberToChar(ge) + str
+        n = (n - ge) / 10
+      } while (n > 0)
+    } else {
+      n = Math.abs(n)
+      while (n > 0){
       var ge = n % 10
       str = numberToChar(ge) + str
       n = (n - ge) / 10
-    } while (n > 0)
+    }
+    str = "-" + str
+    }
     return str
   }
+
+  var n = Number(prompt())
+  var a = itob(n)
+  console.log(a)
 
 </script>
 
@@ -2082,6 +2100,11 @@
     } while (m !== 0)
     return n
   }
+
+  var m = Number(prompt())
+  var n = Number(prompt())
+  console.log(largesCommonFactor(m, n))
+  console.log(lettlesCommonMultiple(m, n))
 
 </script>
 
