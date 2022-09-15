@@ -2145,3 +2145,94 @@
   // }
 
 </script>
+
+<script type="">
+  // 取出字符串里的第某个数
+  var str = '238 234 543 1234 5'
+
+  function extract(numbers, n) {
+    var spaces = 0  // 记录遇到的空格数
+
+    for (var i = 0; spaces < n && i < numbers.length; i++) {
+      if (numbers[i] == ' ') {
+        spaces++
+      }
+    }
+
+    var num = ''
+    for (var j = i; j < numbers.length; j++) {
+      if (numbers[j] !== ' ') {
+        num += numbers[j]
+      } else {
+        break
+      }
+    }
+    return Number(num)
+  }
+</script>
+
+<script type="">
+  // 判断两个数组的内容是否相同
+  function isEqualArray(a, b) {
+  if (a.length == b.length) {
+    for (var i = 0; i < a.length; i++) {
+      if (a[i] !== b[i]) {
+        return false
+      }
+    }
+    return true
+  }
+  return false
+}
+</script>
+
+<script type="">
+  // 记录每一天的日志
+  var journal = [];
+  function addEntry(events, didITurnIntoASquirrel) {
+    journal.push({
+      events: events,  // 数组，数组里是若干个字符串表达每天做得事情
+      squirrel: didITurnIntoASquirrel // 有没有变成松鼠
+    });
+  }
+
+</script>
+
+<script type="">
+  // 出现的四种情况，用2*2的表格表示后
+  function phi(table) {
+    return (table[3] * table[0] - table[2] * table[1]) /
+    Math.sqrt((table[2] + table[3]) *
+              (table[0] + table[1]) *
+              (table[1] + table[3]) *
+              (table[0] + table[3]))
+  }
+  console.log(phi([76, 9, 4, 1]));
+</script>
+
+<script type="">
+  // 针对每一个特定的事件，分别拿到这个时间跟变松鼠之间的统计数据，然后计算出相关性
+  function hasEvent(event, entry) {  // 某天（entry）是否有发生什么事情（entry）
+    return entry.events.indexOf(event) != -1  // 在events的数组里去找event元素，找到了返回元素下标，找不到返回-1
+    // 可以用.includes()函数判断数里是否存在某个元素
+  }
+  function tableFor(event, journal) {  // 计算某件事与变成松鼠的表格
+    var table =[0, 0, 0, 0]
+    for (var i = 0; i < journal.length; i++) {
+      var entry = journal[i], index = 0  // 遍历拿到当天发生的事情和那天有没有变松鼠
+      // [0, 0, 0, 0] 转二进制：00，01，10，11
+      // 高位代表是否变松鼠，低位代表今天有没有做那件事情
+      // +1相当于把低位变1，+2相当于把高位变1
+      // 左边是高位，右边是低位，可理解成权重
+      if (hasEvent(event, entry)) {
+        index += 1  // 低位置1，代表event发生了
+      }
+      if (entry.squirrel) {
+        index += 2  // 高位置1，代表变成松鼠了
+      }
+    }
+    return table
+  }
+  console.log(tableFor("pizza", JOURNAL));
+
+</script>
