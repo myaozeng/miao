@@ -14,7 +14,9 @@ var myaozeng = {
         temp = []
       }
     }
-    result.push(temp)
+    if (temp[0]) {
+      result.push(temp)
+    }
     return result
   },
 
@@ -118,9 +120,9 @@ var myaozeng = {
     var resultStr = ''
     for (var i = 0; i < array.length; i++) {
       if (i !== array.length - 1) {
-        resultStr += array[i] + separator
+        resultStr = resultStr + array[i] + separator
       } else {
-        resultStr += array[i]
+        resultStr = resultStr + array[i]
       }
     }
     return resultStr
