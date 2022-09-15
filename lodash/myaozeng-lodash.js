@@ -110,11 +110,6 @@ var myaozeng = {
     retuen - 1
   },
 
-  // 获取数组array中除了最后一个元素之外的所有元素（注：去除数组array中的最后一个元素）。
-  initial: function (array) {
-
-  },
-
   // 将 array 中的所有元素转换为由 separator 分隔的字符串。
   join: function (array, separator) {
     var resultStr = ''
@@ -149,7 +144,43 @@ var myaozeng = {
 
   // 获取array数组的第n个元素。如果n为负数，则返回从数组结尾开始的第n个元素。
   nth: function (array, n) {
+    for (var i = 0; i < array.length; i++) {
+      if (i == n) {
+        return array[i]
+      }
+    }
+  },
 
+  // 移除数组中predicate（断言）返回为真值的所有元素，并返回移除元素组成的数组。
+  remove: function (array, value) {
+    var newArr = []
+    for (var i = 0; i < array.length; i++) {
+      if (array[i] !== value) {
+        newArr.push(array[i])
+      }
+    }
+    return newArr
+  },
+
+  // 反转array，使得第一个元素变为最后一个元素，第二个元素变为倒数第二个元素，依次类推。
+  reverse: function (array) {
+    var stop = Math.floor(array.length / 2)
+    for (var i = 0; i < stop; i++) {
+      var j = array.length - i - 1
+      var temp = array[j]
+      array[j] = array[i]
+      array[i] = temp
+    }
+    return array
+  },
+
+  // 裁剪数组array，从 start 位置开始到end结束，但不包括 end 本身的位置。
+  slice: function (array, start = 0, end = array.length) {
+    var newArr = []
+    for (var i = start; i < end; i++) {
+      newArr.push(array[i])
+    }
+    return newArr
   },
 
 }
